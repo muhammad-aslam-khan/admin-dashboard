@@ -1,0 +1,114 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+}
+ul {
+	padding: 0;
+	margin: 35px auto;
+}
+
+.container {
+	display: grid;
+	grid: 150px min-content / minmax(min-content, 0.8fr) 4fr;
+	grid-template-areas:
+		"left-nav admin-and-search"
+		"left-nav proj-annou-trend";
+}
+
+/* --- Left Navigation Section --- */
+.left-nav {
+	grid-area: left-nav;
+}
+.left-nav li,
+.left-nav > a {
+	list-style: none;
+	margin: 3% 9%;
+}
+li a,
+.left-nav > a {
+	display: flex;
+	gap: 5%;
+	align-items: center;
+}
+
+/* --- Search & Admin Info Section --- */
+.admin-and-search {
+	grid-area: admin-and-search;
+
+	display: grid;
+	grid: 100% / 1.5fr 1fr;
+}
+.admin-and-search > .search-side {
+	display: grid;
+	grid: 1fr 1.5fr/ 1fr;
+	align-items: center;
+}
+.admin-and-search > .search-side > .admin-info {
+	display: grid;
+	grid: 100%/ 1fr 6fr;
+}
+.admin-and-search > .buttons-side {
+	display: grid;
+	grid: 50% 50% / 1fr;
+	align-items: center;
+}
+.admin-and-search > .buttons-side > div {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+/* --- Projects, Announcements, & Trending Section --- */
+.proj-annou-trend {
+	grid-area: proj-annou-trend;
+
+	display: grid;
+	grid: repeat(2, min-content) / 3fr 1fr;
+	grid-template-areas:
+		"projects announcements"
+		"projects trending";
+}
+.proj-annou-trend > .projects-sec {
+	grid-area: projects;
+
+	display: grid;
+	grid: min-content minmax(min-content, 1fr) / 1fr;
+}
+.proj-annou-trend > .projects-sec > .projects {
+	display: grid;
+	grid: repeat(3, 1fr) / repeat(2, 1fr);
+	gap: 20px;
+}
+.proj-annou-trend > .projects-sec > .projects > .project-card > .icons {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.proj-annou-trend > .announc-sec {
+	grid-area: announcements;
+}
+
+.proj-annou-trend > .trending-sec {
+	grid-area: trending;
+}
+
+.proj-annou-trend > .announc-sec,
+.proj-annou-trend > .trending-sec {
+	display: grid;
+	grid: repeat(2, min-content) / 1fr;
+}
+
+.container > *, .projects-sec > *, .announc-sec >*, .trending-sec > *, .admin-and-search > *
+/*, .admin-and-search > .buttons-side > *, .left-nav > *, .left-nav li,
+.admin-and-search > .left,
+.admin-and-search > .search-side > .admin-info *,
+.proj-annou-trend > *,
+.projects-sec > *,
+.projects > *,
+.project-card > *,
+.project-card > .icons > * */ {
+	border: 1px solid;
+}

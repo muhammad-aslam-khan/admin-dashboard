@@ -1,2 +1,3 @@
-# admin-dashboard
+# Admin Dashboard
+
 Admin Dashboard Demo Project

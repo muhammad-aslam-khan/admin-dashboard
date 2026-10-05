@@ -3,47 +3,149 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/fonts.css" />
+		<link
+			rel="shortcut icon"
+			href="./images/icons/dashboard.svg"
+			type="image/svg"
+		/>
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Blinker:wght@100;200;300;400;600;700;800;900&family=Play:wght@400;700&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Baumans&display=swap"
+			rel="stylesheet"
+		/>
+
 		<title>Dashboard</title>
 	</head>
 	<body>
 		<div class="container">
 			<div class="left-nav">
-				<a href=""
-					><span>icon</span>
-					<h2>Dashboard</h2></a
+				<a href="" class="dashboard"
+					><div>
+						<img
+							class="icon"
+							src="./images/icons/dashboard.svg"
+							alt="home icon"
+						/>
+					</div>
+					<h2>H2 Dashboard</h2></a
 				>
-				<nav>
+				<nav class="play-regular">
 					<ul>
 						<li>
-							<a href=""><span>icon</span> Home</a>
+							<a href=""
+								><div>
+									<img
+										class="icon"
+										src="./images/icons/home.svg"
+										alt="home icon"
+									/>
+								</div>
+								Home</a
+							>
 						</li>
 						<li>
-							<a href=""><span>icon</span> Profile</a>
+							<a href=""
+								><div>
+									<img
+										class="icon"
+										src="./images/icons/account.svg"
+										alt="home icon"
+									/>
+								</div>
+								Profile</a
+							>
 						</li>
 						<li>
-							<a href=""><span>icon</span> Messages</a>
+							<a href=""
+								><div>
+									<img
+										class="icon"
+										src="./images/icons/messages.svg"
+										alt="home icon"
+									/>
+								</div>
+								Messages</a
+							>
 						</li>
 						<li>
-							<a href=""><span>icon</span> History</a>
+							<a href=""
+								><div>
+									<img
+										class="icon"
+										src="./images//icons/history.svg"
+										alt="home icon"
+									/>
+								</div>
+								History</a
+							>
 						</li>
 						<li>
-							<a href=""><span>icon</span> Tasks</a>
+							<a href=""
+								><div>
+									<img
+										class="icon"
+										src="./images/icons/tasks.svg"
+										alt="home icon"
+									/>
+								</div>
+								Tasks</a
+							>
 						</li>
 						<li>
-							<a href=""><span>icon</span> Communities</a>
+							<a href=""
+								><div>
+									<img
+										class="icon"
+										src="./images/icons/communities.svg"
+										alt="home icon"
+									/>
+								</div>
+								Communities</a
+							>
 						</li>
 					</ul>
 				</nav>
-				<ul class="support-menu">
+				<ul class="support-menu play-regular">
 					<li>
-						<a href=""><span>icon</span> Settings</a>
+						<a href=""
+							><div>
+								<img
+									class="icon"
+									src="./images/icons/settings.svg"
+									alt="home icon"
+								/>
+							</div>
+							Settings</a
+						>
 					</li>
 					<li>
-						<a href=""><span>icon</span> Support</a>
+						<a href=""
+							><div>
+								<img
+									class="icon"
+									src="./images/icons/support.svg"
+									alt="home icon"
+								/>
+							</div>
+							Support</a
+						>
 					</li>
 					<li>
-						<a href=""><span>icon</span> Privacy</a>
+						<a href=""
+							><div>
+								<img
+									class="icon"
+									src="./images/icons/privacy.svg"
+									alt="home icon"
+								/>
+							</div>
+							Privacy</a
+						>
 					</li>
 				</ul>
 			</div>
@@ -57,8 +159,8 @@
 					<div class="admin-info">
 						<div class="avatar">Avatar</div>
 						<div class="admin-name">
-							<h5>Hi there,</h5>
-							<h2>Admin Name (@admin)</h2>
+							<h5>H5 Hi there,</h5>
+							<h2>H2 Admin Name (@admin)</h2>
 						</div>
 					</div>
 				</div>
@@ -78,94 +180,184 @@
 
 			<div class="proj-annou-trend">
 				<div class="projects-sec">
-					<h2>Your Projects</h2>
+					<h2>H2 Your Projects</h2>
 					<div class="projects">
 						<div class="project-card">
-							<h3>Project Heading</h3>
+							<h3>H3 Project Heading</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Aut veniam alias quibusdam,
 								nisi id totam?
 							</p>
 							<div class="icons">
-								<span>Add icon</span>
-								<span>Watch icon</span>
-								<span>Fork icon</span>
+								<div>
+									<img
+										src="./images/icons/star-plus.svg"
+										alt="mark favorite icon"
+									/>
+								</div>
+								<div>
+									<img
+										src="./images/icons/eye-plus.svg"
+										alt="track icon"
+									/>
+								</div>
+								<div>
+									<img
+										src="./images/icons/merge.svg"
+										alt="merge icon"
+									/>
+								</div>
 							</div>
 						</div>
 						<div class="project-card">
-							<h3>Project Heading</h3>
+							<h3>H3 Project Heading</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Aut veniam alias quibusdam,
 								nisi id totam?
 							</p>
 							<div class="icons">
-								<span>Add icon</span>
-								<span>Watch icon</span>
-								<span>Fork icon</span>
+								<div>
+									<img
+										src="./images/icons/star-plus.svg"
+										alt="mark favorite icon"
+									/>
+								</div>
+								<div>
+									<img
+										src="./images/icons/eye-plus.svg"
+										alt="track icon"
+									/>
+								</div>
+								<div>
+									<img
+										src="./images/icons/merge.svg"
+										alt="merge icon"
+									/>
+								</div>
 							</div>
 						</div>
 						<div class="project-card">
-							<h3>Project Heading</h3>
+							<h3>H3 Project Heading</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Aut veniam alias quibusdam,
 								nisi id totam?
 							</p>
 							<div class="icons">
-								<span>Add icon</span>
-								<span>Watch icon</span>
-								<span>Fork icon</span>
+								<div>
+									<img
+										src="./images/icons/star-plus.svg"
+										alt="mark favorite icon"
+									/>
+								</div>
+								<div>
+									<img
+										src="./images/icons/eye-plus.svg"
+										alt="track icon"
+									/>
+								</div>
+								<div>
+									<img
+										src="./images/icons/merge.svg"
+										alt="merge icon"
+									/>
+								</div>
 							</div>
 						</div>
 						<div class="project-card">
-							<h3>Project Heading</h3>
+							<h3>H3 Project Heading</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Aut veniam alias quibusdam,
 								nisi id totam?
 							</p>
 							<div class="icons">
-								<span>Add icon</span>
-								<span>Watch icon</span>
-								<span>Fork icon</span>
+								<div>
+									<img
+										src="./images/icons/star-plus.svg"
+										alt="mark favorite icon"
+									/>
+								</div>
+								<div>
+									<img
+										src="./images/icons/eye-plus.svg"
+										alt="track icon"
+									/>
+								</div>
+								<div>
+									<img
+										src="./images/icons/merge.svg"
+										alt="merge icon"
+									/>
+								</div>
 							</div>
 						</div>
 						<div class="project-card">
-							<h3>Project Heading</h3>
+							<h3>H3 Project Heading</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Aut veniam alias quibusdam,
 								nisi id totam?
 							</p>
 							<div class="icons">
-								<span>Add icon</span>
-								<span>Watch icon</span>
-								<span>Fork icon</span>
+								<div>
+									<img
+										src="./images/icons/star-plus.svg"
+										alt="mark favorite icon"
+									/>
+								</div>
+								<div>
+									<img
+										src="./images/icons/eye-plus.svg"
+										alt="track icon"
+									/>
+								</div>
+								<div>
+									<img
+										src="./images/icons/merge.svg"
+										alt="merge icon"
+									/>
+								</div>
 							</div>
 						</div>
 						<div class="project-card">
-							<h3>Project Heading</h3>
+							<h3>H3 Project Heading</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Aut veniam alias quibusdam,
 								nisi id totam?
 							</p>
 							<div class="icons">
-								<span>Add icon</span>
-								<span>Watch icon</span>
-								<span>Fork icon</span>
+								<div>
+									<img
+										src="./images/icons/star-plus.svg"
+										alt="mark favorite icon"
+									/>
+								</div>
+								<div>
+									<img
+										src="./images/icons/eye-plus.svg"
+										alt="track icon"
+									/>
+								</div>
+								<div>
+									<img
+										src="./images/icons/merge.svg"
+										alt="merge icon"
+									/>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="announc-sec">
-					<h2>Announcements</h2>
+					<h2>H2 Announcements</h2>
 					<div class="announcements">
 						<div class="announcement">
-							<h4>Announcement Heading</h4>
+							<h4>H4 Announcement Heading</h4>
 							<p>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Explicabo tenetur officia
@@ -173,7 +365,7 @@
 							</p>
 						</div>
 						<div class="announcement">
-							<h4>Announcement Heading</h4>
+							<h4>H4 Announcement Heading</h4>
 							<p>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Explicabo tenetur officia
@@ -181,7 +373,7 @@
 							</p>
 						</div>
 						<div class="announcement">
-							<h4>Announcement Heading</h4>
+							<h4>H4 Announcement Heading</h4>
 							<p>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Explicabo tenetur officia
@@ -192,33 +384,33 @@
 				</div>
 
 				<div class="trending-sec">
-					<h2>Trending</h2>
+					<h2>H2 Trending</h2>
 					<div class="trends">
 						<div class="trend">
 							<div>
 								<div>Icon</div>
-								<h5>@trend</h5>
+								<h5>H5 @trend</h5>
 								<p>Lorem, ipsum dolor.</p>
 							</div>
 						</div>
 						<div class="trend">
 							<div>Icon</div>
 							<div>
-								<h5>@trend</h5>
+								<h5>H5 @trend</h5>
 								<p>Lorem, ipsum dolor.</p>
 							</div>
 						</div>
 						<div class="trend">
 							<div>Icon</div>
 							<div>
-								<h5>@trend</h5>
+								<h5>H5 @trend</h5>
 								<p>Lorem, ipsum dolor.</p>
 							</div>
 						</div>
 						<div class="trend">
 							<div>Icon</div>
 							<div>
-								<h5>@trend</h5>
+								<h5>H5 @trend</h5>
 								<p>Lorem, ipsum dolor.</p>
 							</div>
 						</div>

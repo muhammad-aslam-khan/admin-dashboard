@@ -1,3 +1,7 @@
+:root {
+	--primary-bright-orange: #ff7034;
+	--primary-orange: #d97700;
+}
 h1,
 h2,
 h3,
@@ -9,10 +13,22 @@ ul {
 	padding: 0;
 	margin: 35px auto;
 }
+a {
+	font-style: normal;
+	text-decoration: none;
+	color: inherit;
+}
+body {
+	height: 100vh;
+	margin: 0;
+}
 
 .container {
+	height: 100%;
 	display: grid;
-	grid: 150px min-content / minmax(min-content, 0.8fr) 4fr;
+	grid:
+		minmax(min-content, 150px) minmax(min-content, 1fr) /
+		minmax(250px, 300px) 1fr;
 	grid-template-areas:
 		"left-nav admin-and-search"
 		"left-nav proj-annou-trend";
@@ -21,17 +37,44 @@ ul {
 /* --- Left Navigation Section --- */
 .left-nav {
 	grid-area: left-nav;
+	background-color: var(--primary-orange);
+	color: white;
 }
 .left-nav li,
 .left-nav > a {
 	list-style: none;
-	margin: 3% 9%;
 }
 li a,
 .left-nav > a {
 	display: flex;
-	gap: 5%;
+	gap: 3.5%;
 	align-items: center;
+
+	font-size: 1.7em;
+}
+li > a {
+	font-size: 1.5em;
+}
+li:nth-child(n) {
+	margin-bottom: 0.7em;
+}
+.dashboard > h2 {
+	font-size: 1.5rem;
+}
+.dashboard {
+	margin-top: 2rem;
+}
+div:has(> img:only-child) {
+	display: flex;
+	align-items: center;
+
+	margin-left: 6.5%;
+}
+img:only-child {
+	height: 1em; /* Size linked with parent; the <a> tag*/
+}
+.support-menu {
+	margin-top: 0;
 }
 
 /* --- Search & Admin Info Section --- */
@@ -64,9 +107,10 @@ li a,
 /* --- Projects, Announcements, & Trending Section --- */
 .proj-annou-trend {
 	grid-area: proj-annou-trend;
+	height: 100%;
 
 	display: grid;
-	grid: repeat(2, min-content) / 3fr 1fr;
+	grid: minmax(min-content, max-content) minmax(min-content, 1fr) / 3fr 1fr;
 	grid-template-areas:
 		"projects announcements"
 		"projects trending";
@@ -75,12 +119,13 @@ li a,
 	grid-area: projects;
 
 	display: grid;
-	grid: min-content minmax(min-content, 1fr) / 1fr;
+	grid: min-content minmax(min-content, 100%) / 1fr;
 }
 .proj-annou-trend > .projects-sec > .projects {
 	display: grid;
-	grid: repeat(3, 1fr) / repeat(2, 1fr);
+	grid: repeat(3, 220px) / repeat(2, 1fr);
 	gap: 20px;
+	align-items: start;
 }
 .proj-annou-trend > .projects-sec > .projects > .project-card > .icons {
 	display: flex;
@@ -102,7 +147,8 @@ li a,
 }
 
 .container > *, .projects-sec > *, .announc-sec >*, .trending-sec > *, .admin-and-search > *
-/*, .admin-and-search > .buttons-side > *, .left-nav > *, .left-nav li,
+/*, .left-nav > *, .left-nav > a > *, li  > * , li > a > *
+, .admin-and-search > .buttons-side > *, .left-nav > *, .left-nav li,
 .admin-and-search > .left,
 .admin-and-search > .search-side > .admin-info *,
 .proj-annou-trend > *,

@@ -25,7 +25,7 @@ h5 {
 }
 ul {
 	padding: 0;
-	margin: 35px auto;
+	margin: 20px auto;
 }
 a {
 	font-style: normal;
@@ -40,10 +40,11 @@ button {
 
 .container {
 	height: 100%;
+
 	display: grid;
 	grid:
 		minmax(min-content, 150px) minmax(min-content, 1fr) /
-		minmax(250px, 300px) 1fr;
+		minmax(max-content, 200px) 1fr;
 	grid-template-areas:
 		"left-nav admin-and-search"
 		"left-nav proj-annou-trend";
@@ -64,14 +65,12 @@ li a,
 	display: flex;
 	gap: 3.5%;
 	align-items: center;
-
-	font-size: 1.7em;
 }
 li > a {
-	font-size: 1.5em;
+	font-size: 1.1em;
 }
 li:nth-child(n) {
-	margin-bottom: 0.7em;
+	margin-bottom: 0.3em;
 }
 .dashboard > h2 {
 	font-size: 1.5rem;
@@ -83,7 +82,7 @@ div:has(> img:only-child) {
 	display: flex;
 	align-items: center;
 
-	margin-left: 6.5%;
+	margin-left: 6%;
 }
 img:only-child {
 	height: 1em; /* Size linked with parent; the <a> tag*/
@@ -160,8 +159,8 @@ form.search > input:focus {
 	grid: 100% / minmax(min-content, 1fr) 7fr;
 }
 .admin-info > img {
-	height: 5rem;
-	width: 5rem;
+	height: 4rem;
+	width: 4rem;
 	border-radius: 50%;
 }
 .admin-info > div.admin-name {
@@ -179,29 +178,29 @@ form.search > input:focus {
 .admin-and-search > .buttons-side > div {
 	display: flex;
 	justify-content: flex-end;
-	gap: 20px;
+	gap: 15px;
 	align-items: center;
 	margin-right: 45px;
 }
 .buttons-side > div.icons-row > * {
-	height: 2rem;
+	height: 1.5rem;
 }
 div.icons-row > :nth-child(2) {
-	height: 3rem;
-	width: 3rem;
+	height: 2rem;
+	width: 2rem;
 	border-radius: 50%;
 }
 div.icons-row > :nth-child(3) {
 	display: flex;
 	align-items: center;
 	font-weight: 600;
-	font-size: 1.5rem;
+	font-size: 1.1rem;
 }
 
 .buttons-side > div.buttons-row > button {
-	height: 2.5rem;
-	width: 7rem;
-	font-size: 1.1rem;
+	height: 2rem;
+	width: 6rem;
+	font-size: 0.9rem;
 	border-radius: 20px;
 }
 .buttons-side > div.buttons-row > button:active {
@@ -219,7 +218,7 @@ div.icons-row > :nth-child(3) {
 	grid-template-areas:
 		"projects announcements"
 		"projects trending";
-	gap: 35px;
+	gap: 25px;
 
 	background-color: var(--secondary-bg-10);
 	box-shadow: inset 4px 8px 6px var(--secondary-bg);
@@ -232,15 +231,16 @@ div.icons-row > :nth-child(3) {
 }
 .proj-annou-trend p {
 	color: var(--projects-text);
+	font-size: 0.8rem;
 }
 .proj-annou-trend h2 {
-	font-size: 2rem;
-}
-.proj-annou-trend h3 {
 	font-size: 1.5rem;
 }
-.proj-annou-trend h4 {
+.proj-annou-trend h3 {
 	font-size: 1.2rem;
+}
+.proj-annou-trend h4 {
+	font-size: 0.9rem;
 }
 .proj-annou-trend > .projects-sec {
 	grid-area: projects;
@@ -248,15 +248,14 @@ div.icons-row > :nth-child(3) {
 	display: grid;
 	grid: min-content minmax(min-content, 100%) / 1fr;
 	gap: 20px;
-	margin: 35px 0 0 45px;
+	margin: 20px 0 0 25px;
 }
 .proj-annou-trend > .projects-sec > .projects {
 	display: grid;
-	grid: repeat(3, minmax(250px, auto)) / repeat(2, 1fr);
-	/* grid: repeat(3, clamp(min-content, 250px, max-content)) / repeat(2, 1fr); */
+	grid: repeat(3, minmax(min-content, 170px)) / repeat(2, 1fr);
 
-	gap: 30px;
-	align-items: start;
+	gap: 20px;
+	/* align-items: start; */
 }
 .projects > .project-card,
 .announc-sec > .announcements,
@@ -264,11 +263,11 @@ div.icons-row > :nth-child(3) {
 	background-color: white;
 	box-shadow: 8px 8px 10px 3px var(--secondary-bg);
 	border-radius: 10px;
-	padding: 15px;
+	padding: 10px;
 }
 .projects > .project-card {
 	border-left: 7px solid var(--primary-50);
-	height: 80%;
+	/* height: 60%; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -278,10 +277,9 @@ div.icons-row > :nth-child(3) {
 	justify-content: flex-end;
 }
 .projects .icons > div > img {
-	height: 24px;
-	padding: 5px;
-
+	height: 20px;
 	border-radius: 50%;
+	padding: 5px;
 }
 .projects .icons > div > img:hover {
 	box-shadow: 0 0 7px 4px var(--primary-10);
@@ -290,15 +288,15 @@ div.icons-row > :nth-child(3) {
 	box-shadow: 0 0 5px 3px var(--primary-50);
 }
 .projects-sec p {
-	font-size: 1.25rem;
+	font-size: 1rem;
 }
 
 .proj-annou-trend > .announc-sec {
 	grid-area: announcements;
-	margin: 35px 45px 0 0;
+	margin: 25px 30px 0 0;
 
 	display: flex;
-	gap: 20px;
+	gap: 15px;
 }
 .announc-sec > .announcements > :not(:last-child) {
 	border-bottom: 1px solid var(--secondary-bg);
@@ -308,7 +306,8 @@ div.icons-row > :nth-child(3) {
 }
 .proj-annou-trend > .trending-sec {
 	grid-area: trending;
-	margin-right: 45px;
+	margin-right: 35px;
+	margin-bottom: 20px;
 
 	display: flex;
 	gap: 20px;
@@ -330,10 +329,10 @@ div.icons-row > :nth-child(3) {
 	gap: 10px;
 }
 .trends > .trend > * {
-	height: 4rem;
+	height: 2.5rem;
 }
 .trends > .trend > :first-child {
-	width: 4rem;
+	width: 2.5rem;
 	flex-shrink: 0;
 	border-radius: 50%;
 }

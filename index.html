@@ -32,7 +32,7 @@
 							alt="home icon"
 						/>
 					</div>
-					<h2>H2 Dashboard</h2></a
+					<h2>Dashboard</h2></a
 				>
 				<nav class="play-regular">
 					<ul>
@@ -153,24 +153,32 @@
 			<div class="admin-and-search">
 				<div class="search-side">
 					<form class="search" action="#" method="get">
-						<button>Search</button>
-						<input type="search" id="search-field" />
+						<button type="submit">
+							<img src="./images/icons/search.svg" alt="" />
+						</button>
+						<input
+							type="search"
+							id="search-field"
+							name="search"
+							class="blinker-regular"
+							placeholder="Search"
+						/>
 					</form>
 					<div class="admin-info">
-						<div class="avatar">Avatar</div>
+						<img src="./images/profile-images/tom.svg" alt="" />
 						<div class="admin-name">
-							<h5>H5 Hi there,</h5>
-							<h2>H2 Admin Name (@admin)</h2>
+							<h5>Hi there,</h5>
+							<h2>Tom Helfer (@tom)</h2>
 						</div>
 					</div>
 				</div>
 				<div class="buttons-side">
-					<div class="row-1">
-						<span>Bell Icon</span>
-						<span>Admin Logo</span>
-						<span>Admin Name</span>
+					<div class="icons-row">
+						<img src="./images/icons/notification.svg" alt="" />
+						<img src="./images/profile-images/tom.svg" alt="" />
+						<h4>Tom Helfer</h4>
 					</div>
-					<div class="row-2">
+					<div class="buttons-row">
 						<button>New</button>
 						<button>Upload</button>
 						<button>Share</button>
@@ -180,15 +188,18 @@
 
 			<div class="proj-annou-trend">
 				<div class="projects-sec">
-					<h2>H2 Your Projects</h2>
+					<h2>Your Projects</h2>
 					<div class="projects">
 						<div class="project-card">
-							<h3>H3 Project Heading</h3>
-							<p>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Aut veniam alias quibusdam,
-								nisi id totam?
-							</p>
+							<div>
+								<h3>Todo List</h3>
+								<p>
+									A simple task manager to organize daily
+									activities. Add tasks, mark them as
+									complete, and keep track of what still needs
+									to be done.
+								</p>
+							</div>
 							<div class="icons">
 								<div>
 									<img
@@ -211,12 +222,14 @@
 							</div>
 						</div>
 						<div class="project-card">
-							<h3>H3 Project Heading</h3>
-							<p>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Aut veniam alias quibusdam,
-								nisi id totam?
-							</p>
+							<div>
+								<h3>Calculator</h3>
+								<p>
+									A basic calculator for quick arithmetic
+									operations, including addition, subtraction,
+									multiplication, and division.
+								</p>
+							</div>
 							<div class="icons">
 								<div>
 									<img
@@ -239,12 +252,13 @@
 							</div>
 						</div>
 						<div class="project-card">
-							<h3>H3 Project Heading</h3>
-							<p>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Aut veniam alias quibusdam,
-								nisi id totam?
-							</p>
+							<div>
+								<h3>Weather App</h3>
+								<p>
+									Check current weather and forecasts for any
+									city.
+								</p>
+							</div>
 							<div class="icons">
 								<div>
 									<img
@@ -267,12 +281,13 @@
 							</div>
 						</div>
 						<div class="project-card">
-							<h3>H3 Project Heading</h3>
-							<p>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Aut veniam alias quibusdam,
-								nisi id totam?
-							</p>
+							<div>
+								<h3>Password Generator</h3>
+								<p>
+									Generate random passwords with customizable
+									length and character options.
+								</p>
+							</div>
 							<div class="icons">
 								<div>
 									<img
@@ -295,12 +310,14 @@
 							</div>
 						</div>
 						<div class="project-card">
-							<h3>H3 Project Heading</h3>
-							<p>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Aut veniam alias quibusdam,
-								nisi id totam?
-							</p>
+							<div>
+								<h3>Recipe Book</h3>
+								<p>
+									A small recipe collection where users can
+									browse meals, search by ingredient, and save
+									their favorite dishes.
+								</p>
+							</div>
 							<div class="icons">
 								<div>
 									<img
@@ -323,12 +340,14 @@
 							</div>
 						</div>
 						<div class="project-card">
-							<h3>H3 Project Heading</h3>
-							<p>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Aut veniam alias quibusdam,
-								nisi id totam?
-							</p>
+							<div>
+								<h3>Color Picker</h3>
+								<p>
+									Pick colors and copy their HEX or RGB
+									values. Useful for experimenting with
+									website themes and UI designs.
+								</p>
+							</div>
 							<div class="icons">
 								<div>
 									<img
@@ -354,64 +373,81 @@
 				</div>
 
 				<div class="announc-sec">
-					<h2>H2 Announcements</h2>
+					<h2>Announcements</h2>
 					<div class="announcements">
 						<div class="announcement">
-							<h4>H4 Announcement Heading</h4>
+							<h4>New Dashboard Interface</h4>
 							<p>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Explicabo tenetur officia
-								laborum dolorum possimus quis?
+								We've refreshed the dashboard with a cleaner
+								layout and improved navigation to help you
+								manage projects faster.
 							</p>
 						</div>
 						<div class="announcement">
-							<h4>H4 Announcement Heading</h4>
+							<h4>Scheduled Maintenance</h4>
 							<p>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Explicabo tenetur officia
-								laborum dolorum possimus quis?
+								The platform will undergo routine maintenance
+								this Sunday from 02:00 AM to 03:00 AM UTC. Some
+								services may be temporarily unavailable.
 							</p>
 						</div>
 						<div class="announcement">
-							<h4>H4 Announcement Heading</h4>
+							<h4>Introducing Project Tags</h4>
 							<p>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Explicabo tenetur officia
-								laborum dolorum possimus quis?
+								You can now organize your projects using custom
+								tags, making it easier to filter and find your
+								work.
 							</p>
 						</div>
 					</div>
 				</div>
 
 				<div class="trending-sec">
-					<h2>H2 Trending</h2>
+					<h2>Trending</h2>
 					<div class="trends">
 						<div class="trend">
+							<img src="./images/profile-images/dog.png" alt="" />
 							<div>
-								<div>Icon</div>
-								<h5>H5 @trend</h5>
-								<p>Lorem, ipsum dolor.</p>
+								<h5>@code_mate</h5>
+								<p>
+									QuickCalc — An open-source JavaScript
+									calculator
+								</p>
 							</div>
 						</div>
 						<div class="trend">
-							<div>Icon</div>
+							<img
+								src="./images/profile-images/tina.svg"
+								alt=""
+							/>
 							<div>
-								<h5>H5 @trend</h5>
-								<p>Lorem, ipsum dolor.</p>
+								<h5>@dev_sarah</h5>
+								<p>TaskFlow — A simple task management app</p>
 							</div>
 						</div>
 						<div class="trend">
-							<div>Icon</div>
+							<img
+								src="./images/profile-images/fish.png"
+								alt=""
+							/>
 							<div>
-								<h5>H5 @trend</h5>
-								<p>Lorem, ipsum dolor.</p>
+								<h5>@pixelcraft</h5>
+								<p>
+									ColorKit — Handy tools for working with
+									colors
+								</p>
 							</div>
 						</div>
 						<div class="trend">
-							<div>Icon</div>
+							<img
+								src="./images/profile-images/akash.svg"
+								alt=""
+							/>
 							<div>
-								<h5>H5 @trend</h5>
-								<p>Lorem, ipsum dolor.</p>
+								<h5>@ali_builds</h5>
+								<p>
+									WeatherNow — A minimal weather forecast app
+								</p>
 							</div>
 						</div>
 					</div>
